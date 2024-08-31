@@ -4,8 +4,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 // BEGIN
-public class InMemoryKV implements KeyValueStorage{
-    Map<String,String> map = new HashMap<>();
+public class InMemoryKV implements KeyValueStorage {
+    Map<String, String> map = new HashMap<>();
 
     public InMemoryKV(Map<String, String> map) {
         //this.map = map;
@@ -36,7 +36,7 @@ public class InMemoryKV implements KeyValueStorage{
     @Override
     public Map<String, String> toMap() {
         //return map;
-        Map<String,String> map2 = new HashMap<>();
+        Map<String, String> map2 = new HashMap<>();
         map2.putAll(this.map);
         return map2;
     }
