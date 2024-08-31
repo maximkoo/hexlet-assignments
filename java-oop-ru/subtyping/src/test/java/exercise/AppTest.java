@@ -1,9 +1,10 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
-import java.util.Map;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Map;
 
 class AppTest {
     @Test

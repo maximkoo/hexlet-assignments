@@ -38,7 +38,6 @@ class FileKVTest {
         KeyValueStorage storage = new InMemoryKV(Utils.deserialize(content));
         assertThat(storage.get("testKey1", "default")).isEqualTo("testValue1");
         assertThat(storage.get("testKey2", "default")).isEqualTo("default");
-
     }
     // END
 }
