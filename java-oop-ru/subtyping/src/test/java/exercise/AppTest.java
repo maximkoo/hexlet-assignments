@@ -1,9 +1,16 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
+<<<<<<< HEAD
 import static org.assertj.core.api.Assertions.assertThat;
 import java.util.Map;
 
+=======
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Map;
+>>>>>>> e8d6b6a8fd155984d6aaec00fe57d534e888e765
 
 class AppTest {
     @Test

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -8,6 +9,38 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/classes-and-objects" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inheritance" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/inheritance" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/interfaces" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/interfaces" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/patterns" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/patterns" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/subtyping" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/subtyping" />
           </set>
         </option>
       </GradleProjectSettings>
