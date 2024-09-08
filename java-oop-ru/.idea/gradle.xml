@@ -12,10 +12,26 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inheritance" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/inheritance" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/interfaces" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/interfaces" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/patterns" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/patterns" />
           </set>
         </option>
       </GradleProjectSettings>
