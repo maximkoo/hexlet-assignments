@@ -57,8 +57,8 @@ class AppTest {
 
 
         List<Tag> children = List.of(
-            new SingleTag("br", Map.of("id", "s")),
-            new SingleTag("hr", Map.of("class", "a-5"))
+                new SingleTag("br", Map.of("id", "s")),
+                new SingleTag("hr", Map.of("class", "a-5"))
         );
 
         Tag div = new PairedTag("div", attributes, "", children);
