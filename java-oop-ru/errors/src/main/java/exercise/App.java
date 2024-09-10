@@ -6,11 +6,13 @@ public class App {
         Integer sq = null;
         try {
             sq = (int) Math.round(c.getSquare());
+            System.out.println(sq);
         } catch (NegativeRadiusException e) {
             System.out.println(e.getMessage());
+        } finally {
+            System.out.println("Вычисление окончено");
         }
-        System.out.println(sq);
-        System.out.println("Вычисление окончено");
+
     }
 }
 // END
