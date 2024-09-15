@@ -19,7 +19,6 @@ public class App {
         List<String> result = App.buildApartmentsList(apartments, 3);
         System.out.println(result);
     }
-
     public static List<String> buildApartmentsList(List<Home> list, int cnt) {
         return list.stream().sorted(Home::compareTo).limit(cnt).map(Home::toString).collect(Collectors.toList());
     }
