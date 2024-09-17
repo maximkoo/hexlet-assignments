@@ -46,6 +46,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/reflections" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/reflections" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/subtyping" />
         <option name="modules">
           <set>
