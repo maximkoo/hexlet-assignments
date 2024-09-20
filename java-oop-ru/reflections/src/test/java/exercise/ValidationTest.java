@@ -1,19 +1,14 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 
+
 class ValidationTest {
 
-
-    // BEGIN
     @Test
     void testValidate() {
         Address address1 = new Address("Russia", "Ufa", "Lenina", "54", null);
@@ -32,30 +27,7 @@ class ValidationTest {
         assertThat(result3).isEqualTo(expected3);
     }
 
-    @Test
-    void testAdvancedValidate() {
-        String err1 = "length less than 4";
-        String err2 = "can not be null";
-        Map<String, List<String>> mustBe = new HashMap<>();
-        List<String> strings;
-        //1
-        strings = new ArrayList<>(List.of(err1));
-        mustBe.put("country", strings);
-        strings = new ArrayList<>(List.of(err2));
-        mustBe.put("street", strings);
-        Address address1 = new Address("USA", "Texas", null, "7", "2");
-        Map<String, List<String>> notValidFields1 = Validator.advancedValidate(address1);
-        assertThat(notValidFields1.equals(mustBe));
-
-        //2
-        mustBe.clear();
-        mustBe.put("country", new ArrayList<>(List.of(err1, err2)));
-        Address address2 = new Address("", "Dvachsk", "Ololoeva street", "1000", "");
-        Map<String, List<String>> notValidFields2 = Validator.advancedValidate(address2);
-        assertThat(notValidFields2.equals(mustBe));
-
-
-    }
-
+    // BEGIN
+    
     // END
 }

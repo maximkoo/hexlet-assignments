@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/../../interfaces">
+      <sourceFolder url="file://$MODULE_DIR$/../../interfaces/examples" isTestSource="false" packagePrefix="exercise" />
+      <sourceFolder url="file://$MODULE_DIR$/../../interfaces/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../interfaces/src/test/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../subtyping">
+      <sourceFolder url="file://$MODULE_DIR$/../../subtyping/examples" isTestSource="false" packagePrefix="exercise" />
+      <sourceFolder url="file://$MODULE_DIR$/../../subtyping/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../subtyping/src/test/java" isTestSource="false" />
+    </content>
+  </component>
+</module>
