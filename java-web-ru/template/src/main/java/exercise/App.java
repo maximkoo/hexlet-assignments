@@ -30,7 +30,8 @@ public final class App {
 
         app.get("/users/{id}", ctx -> {
             var id = ctx.pathParam("id");
-            var user = USERS.get(Integer.parseInt(id));
+            //var user = USERS.get(Integer.parseInt(id));
+            var user = USERS.stream().filter(x -> x.getId()==Integer.parseInt(id)).findFirst().get();
             var page = new UserPage(user);
             ctx.render("users/show.jte", model("page", page));
         });
