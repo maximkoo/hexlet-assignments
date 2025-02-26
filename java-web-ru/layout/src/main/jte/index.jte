@@ -10,6 +10,9 @@
                 <a href="/users">Users</a>
             </p>
         `,
+    content = @`
+            <H1>Hello, Username!</H1>
+    `,
     footer = @`
         <p>
             <a href="https://github.com/maximkoo/hexlet-assignments">This is Github link</a>
