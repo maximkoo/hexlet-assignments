@@ -31,7 +31,7 @@ public final class App {
             ArrayList<User> users=new ArrayList<>(USERS);
             // Фильтруем, только если была отправлена форма
             if (term != null) {
-                users = users.stream().filter(x->x.getFirstName().toLowerCase().equals(term.toLowerCase())).collect(Collectors.toCollection(ArrayList::new));
+                users = users.stream().filter(x->x.getFirstName().toLowerCase().contains(term.toLowerCase())).collect(Collectors.toCollection(ArrayList::new));
             } else {
                 users = users;
             }
