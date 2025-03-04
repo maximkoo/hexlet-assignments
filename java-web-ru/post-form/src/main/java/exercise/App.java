@@ -37,8 +37,10 @@ public final class App {
         });
 
         app.post("/users", ctx -> {
-            var firstName = ctx.formParam("firstName").toUpperCase();
-            var lastName = ctx.formParam("lastName").toUpperCase();
+            var firstName = ctx.formParam("firstName");
+            firstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1).toLowerCase();
+            var lastName = ctx.formParam("lastName");
+            lastName = lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase();
             var email = ctx.formParam("email").toLowerCase().trim();
             var password = ctx.formParam("password");
             //var passwordConfirmation = ctx.formParam("passwordConfirmation");
