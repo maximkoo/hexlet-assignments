@@ -43,7 +43,7 @@ public final class App {
             var password = ctx.formParam("password");
             //var passwordConfirmation = ctx.formParam("passwordConfirmation");
 
-            var user = new User(firstName, lastName, email, password);
+            var user = new User(firstName, lastName, email, Security.encrypt(password));
             UserRepository.save(user);
             ctx.redirect("/users");
         });
