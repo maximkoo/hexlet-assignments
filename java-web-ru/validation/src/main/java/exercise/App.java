@@ -38,11 +38,11 @@ public final class App {
             try {
                 List<Article> articles = ArticleRepository.getEntities();
                 title = ctx.formParamAsClass("title", String.class)
-                        .check(value -> value.length()>=2, "Заголовок должен быть не короче двух символов")
-                        .check(value -> articles.stream().noneMatch(a->value.equals(a.getTitle())),"Заголовок должен быть уникальным")
+                        .check(value -> value.length()>=2, "Название не должно быть короче двух символов")
+                        .check(value -> articles.stream().noneMatch(a->value.equals(a.getTitle())),"Статья с таким названием уже существует")
                         .get();
                 content = ctx.formParamAsClass("content", String.class)
-                        .check(value -> value.length()>=10, "Статья должна быть не короче десяти символов").get();
+                        .check(value -> value.length()>=10, "Статья должна быть не короче 10 символов").get();
 
                 var article = new Article(title, content);
                 ArticleRepository.save(article);
