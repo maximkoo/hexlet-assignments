@@ -50,6 +50,7 @@ public final class App {
             } catch (ValidationException e) {
                 var page = new BuildArticlePage(title, content, e.getErrors());
                 ctx.render("articles/build.jte", model("page", page));
+                ctx.status(422);
             }
         });
 
