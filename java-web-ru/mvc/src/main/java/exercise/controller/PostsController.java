@@ -77,7 +77,10 @@ public class PostsController {
                     .check(value -> value.length() >= 10, "Пост должен быть не короче 10 символов")
                     .get();
 
-            var post = new Post(name, body);
+            var post = PostRepository.find(id)
+                    .orElseThrow(() -> new NotFoundResponse("Post not found"));
+            post.setName(name);
+            post.setBody(body);
             PostRepository.save(post);
             ctx.redirect(NamedRoutes.postsPath());
 

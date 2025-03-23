@@ -14,7 +14,7 @@
             </div>
             <!-- BEGIN -->
             <div class="mx-auto p-4 py-md-5">
-                <a href="/posts/edit/${page.getPost().getId()}">Edit post</a>
+                <a href="/posts/${page.getPost().getId()}/edit">Edit post</a>
             </div>
             <!-- END -->
         </main>
