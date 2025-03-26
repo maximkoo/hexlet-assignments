@@ -34,7 +34,8 @@ public final class App {
 
         // BEGIN
         app.after(ctx -> {
-            String originalString = ctx.bodyAsClass(String.class);
+            //String originalString = ctx.bodyAsClass(java.lang.String.class);
+            String originalString = ctx.body();
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] encodedhash = digest.digest(originalString.getBytes(StandardCharsets.UTF_8));
             String value = bytesToHex(encodedhash);
