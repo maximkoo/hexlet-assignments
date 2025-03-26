@@ -33,7 +33,7 @@ public final class App {
         app.post(NamedRoutes.postPath("{id}"), PostsController::update);
 
         // BEGIN
-        app.after(ctx -> {
+        app.before(ctx -> {
             //String originalString = ctx.bodyAsClass(java.lang.String.class);
             String originalString = ctx.body();
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
