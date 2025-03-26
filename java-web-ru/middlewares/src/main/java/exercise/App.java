@@ -33,9 +33,10 @@ public final class App {
         app.post(NamedRoutes.postPath("{id}"), PostsController::update);
 
         // BEGIN
-        app.before(ctx -> {
+        app.after(ctx -> {
             //String originalString = ctx.bodyAsClass(java.lang.String.class);
-            String originalString = ctx.body();
+            //String originalString = ctx.body();
+            String originalString = ctx.result();
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] encodedhash = digest.digest(originalString.getBytes(StandardCharsets.UTF_8));
             String value = bytesToHex(encodedhash);
