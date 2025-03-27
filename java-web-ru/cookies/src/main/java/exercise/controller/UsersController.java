@@ -40,10 +40,10 @@ public class UsersController {
         var user = UserRepository.find(id)
                 .orElseThrow(() -> new NotFoundResponse("Post not found"));
 
-        if (!secretToken.equals(secretToken)){
+        if (!secretToken.equals(user.getToken())){
             ctx.redirect(NamedRoutes.buildUserPath());
         };
-        
+
         var page = new UserPage(user);
         ctx.render("users/show.jte", model("page", page));
 
