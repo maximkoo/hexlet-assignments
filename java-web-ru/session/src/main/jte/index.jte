@@ -11,6 +11,7 @@
         </form>
     @endif
     @if(page.getName() == null)
+        Wrong
         <a href="${NamedRoutes.buildSessionPath()}">Войти</a>
     @endif
     `)
