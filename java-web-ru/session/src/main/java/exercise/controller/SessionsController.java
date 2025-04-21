@@ -14,7 +14,13 @@ public class SessionsController {
 
     // BEGIN
     public static void build(Context ctx) {
-        ctx.render("build.jte");
+        String userName = ctx.sessionAttribute("currentUser");
+        if (userName == null){
+            ctx.render("build.jte");
+        } else {
+            var page = new LoginPage(userName, null);
+            ctx.render("index.jte", model("page", page));
+        }
     }
 
     public static void create(Context ctx) {
