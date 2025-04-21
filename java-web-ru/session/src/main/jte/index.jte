@@ -6,7 +6,6 @@
     content = @`
     @if(page.getName() != null)
         <form action="${NamedRoutes.logoutPath()}" method="post">
-        Войти
         ${page.getName()}
         <input type="submit" value="Выйти"/>
         </form>
