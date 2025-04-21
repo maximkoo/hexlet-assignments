@@ -30,7 +30,7 @@ public class SessionsController {
             if (user.getPassword().equals(encrypt(password))) {
                 ctx.sessionAttribute("currentUser", userName);
                 var page = new LoginPage(userName, null);
-                ctx.render("index.jte", model("page", page));
+                ctx.render("index.jte", model("page", page)).status(422);
             } else
             {
                 var page = new LoginPage(null, null);
